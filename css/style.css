@@ -1,0 +1,130 @@
+
+@font-face {
+    font-family: "ITC Korinna Regular";
+    src: url("../fonts/ITC\ Korinna\ Regular.otf") format("opentype");
+}
+
+@font-face{
+    font-family: "Gyparody";
+    src: url("../fonts/gyparody\ rg.ttf") format("truetype")
+
+
+}
+
+body{
+    font-family: "ITC Korinna Regular";
+    background-color:  #aaa;
+}
+
+
+#container{
+    width:90%;
+    margin:auto;
+
+}
+
+header{
+    font-family: "Gyparody";
+    text-align:center;
+}
+
+#gameBoard{
+    
+    display:grid;
+    grid-template-columns: 19% 19% 19% 19% 19%;
+    grid-template-rows: 75px 75px 75px 75px 75px 75px;
+    width:100%;
+    margin:auto;
+
+    /*gap:1px 1px;*/
+    background-color:black;
+    border: 10px solid black;
+    justify-content: space-between;
+    align-content: space-between;
+   
+
+
+
+}
+
+#gameBoard>div{
+
+    background-color: blue;
+    color:#FFD700;
+    font-size: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+    padding:10px;
+   
+}
+
+#gameInfo{
+    margin-top:10px;
+    display:grid;
+    grid-template-columns: auto auto auto;
+    justify-content: space-between ;
+
+}
+
+
+.question:hover{
+    cursor:pointer;
+}
+
+#qaModal{
+
+color: #FFD700;
+font-size:25px;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content/Box */
+  .modal-content {
+    background-color:  blue;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+  }
+  
+  /* The Close Button */
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+
+
+@media screen and (max-width: 600px) {
+
+    #gameBoard>div{
+        font-size:16px;
+    }
+
+  }
